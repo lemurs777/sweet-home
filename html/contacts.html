@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lemurs</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220704131926">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header_white">
+    <div class="header__menu-icon menu-icon__container menu-icon">
+        <button class="menu-icon__btn btn-open">
+            <span class="btn-open__line line "></span>
+            <span class="btn-open__line line"></span>
+            <span class="btn-open__line line"></span>
+        </button>
+        <button class="menu-icon__btn btn-close">
+            <span class="btn-close__line line"></span>
+            <span class="btn-close__line line"></span>
+        </button>
+    </div>
+    <a href="./" class="header__logo">
+        <picture><source srcset="img/logo-green.webp" type="image/webp"><img src="img/logo-green.png" alt="Logo"></picture>
+    </a>
+    <nav class="header__menu menu" data-last="header-btn, append">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Услуги и цены</a></li>
+            <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="header__functions functions">
+        <a data-first="header-btn, after" href="tel:+380689167037" class="functions__phone">
+            <span>+38 (068) 916 70 37</span>
+            <svg>
+                <use xlink: href="img/icons/icons.svg#phone"></use>
+            </svg>
+        </a>
+        <a href="#callback" data-move="header-btn, 768" class="functions__btn btn_green popup-link">Обговорити
+            проект</a>
+        <div class="functions__lang select-box">
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" class="radio" id="ua" name="lang">
+                    <label for="for ua">Ua</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="eng" name="lang">
+                    <label for="for eng">Eng</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="de" name="lang">
+                    <label for="for de">De</label>
+                </div>
+            </div>
+            <div class="selected">
+                Ua
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="contacts">
+
+            <section class="contacts__intro">
+                <div class="contacts__container container">
+                    <div class="contacts__title-block title-block">
+                        <h1 class="contacts__title title">Контакты</h1>
+                    </div>
+                    <div class="contacts__desc">
+                        Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой
+                        процесс внедрения и модернизации. В собенности же реализация намеченных плановых заданий влечет
+                        за собой процесс внедрения и модернизации
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts__map map-contacts">
+                <div class="map-contacts__container container">
+                    <div class="map-contacts__body">
+                        <div class="map-contacts__map">
+                            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-0Jd50Q14BNGaheObbswQc0WIHOWEZM&ehbc=2E312F" width="100%" height="480"></iframe>
+                        </div>
+                        <div class="map-contacts__block">
+                            <div class="map-contacts__title">Контакты</div>
+                            <div class="map-contacts__item">
+                                <div class="map-contacts__icon">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#location"></use>
+                                    </svg>
+                                </div>
+                                <div class="map-contacts__content">
+                                    <div class="map-contacts__label">Адрес</div>
+                                    <div class="map-contacts__info">г. Сторожинець</div>
+                                </div>
+                            </div>
+                            <div class="map-contacts__item">
+                                <div class="map-contacts__icon">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#call"></use>
+                                    </svg>
+                                </div>
+                                <div class="map-contacts__content">
+                                    <div class="map-contacts__label">Телефон</div>
+                                    <div class="map-contacts__info">8 800 934 12 32</div>
+                                </div>
+                            </div>
+                            <div class="map-contacts__item">
+                                <div class="map-contacts__icon">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#mail"></use>
+                                    </svg>
+                                </div>
+                                <div class="map-contacts__content">
+                                    <div class="map-contacts__label">Почта</div>
+                                    <div class="map-contacts__info">test@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts__form callback">
+                <div class="callback__bg">
+                    <div class="callback__gradient bg-gradient"></div>
+                    <div class="callback__gradient bg-gradient"></div>
+                </div>
+                <div class="callback__container container">
+                    <form action="#" class="callback__body">
+                        <h2 class="callback__title">
+                            Остались вопросы или хотите сделать заказ?
+                        </h2>
+                        <div class="callback__desc">
+                            Оставьте заявку на звонок и мы с вами свяжемся. Мы с удовольствием вам поможем!
+                        </div>
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Почта" class="_email">
+                        <textarea name="comment" placeholder="Вопрос"></textarea>
+                        <div class="callback__checkbox checkbox">
+                            Поставив отметку, Вы даете согласие на обработку персональных данных и соглашаетесь
+                            c политикой конфиденциальности.
+                            <input type="checkbox" name="agreement">
+                        </div>
+                        <button type="submit" class="callback__btn btn_green">Надіслати</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+    <div class="footer__block" data-last="footer-menu, after">
+        <a href="#" class="footer__logo" data-first="footer-menu, after">
+            <picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt="Logo"></picture>
+        </a>
+        <nav class="footer__menu menu-footer" data-move="footer-menu, 993">
+            <ul class="menu-footer__list">
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Услуги и цены</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Портфолио</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">О нас</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="footer__functions functions-footer">
+            <a href="mailto:lemurs@info.com" class="functions-footer__email">lemurs@info.com</a>
+            <div class="functions-footer__lang select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="ua" name="lang">
+                        <label for="for ua">Ua</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="eng" name="lang">
+                        <label for="for eng">Eng</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="de" name="lang">
+                        <label for="for de">De</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Ua
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__block">
+        <div class="footer__rights">© 2021 Primax Technology. All rights reserved. Designed by Design Department.</div>
+        <a href="#" class="footer__instagram">
+            <svg>
+                <use xlink: href="img/icons/icons.svg#instagram"></use>
+            </svg>
+        </a>
+    </div>
+</footer>
+        <div class="callback__popup popup" id="callback">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#close"></use>
+                </svg>
+            </a>
+            <form action="#" class="callback__body">
+                <h2 class="callback__title">
+                    Остались вопросы или хотите сделать заказ?
+                </h2>
+                <div class="callback__desc">
+                    Оставьте заявку на звонок и мы с вами свяжемся. Мы с удовольствием вам поможем!
+                </div>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Почта" class="_email">
+                <textarea name="comment" placeholder="Вопрос"></textarea>
+                <div class="callback__checkbox checkbox">
+                    Поставив отметку, Вы даете согласие на обработку персональных данных и соглашаетесь
+                    c политикой конфиденциальности.
+                    <input type="checkbox" name="agreement">
+                </div>
+                <button type="submit" class="callback__btn btn_green">Надіслати</button>
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="js/app.min.js?_v=20220704131926"></script>
+</body>
+
+</html>

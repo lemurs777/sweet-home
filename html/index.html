@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lemurs</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220704131926">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+    <div class="header__menu-icon menu-icon__container menu-icon">
+        <button class="menu-icon__btn btn-open">
+            <span class="btn-open__line line "></span>
+            <span class="btn-open__line line"></span>
+            <span class="btn-open__line line"></span>
+        </button>
+        <button class="menu-icon__btn btn-close">
+            <span class="btn-close__line line"></span>
+            <span class="btn-close__line line"></span>
+        </button>
+    </div>
+    <a href="./" class="header__logo">
+        <picture><source srcset="img/logo-green.webp" type="image/webp"><img src="img/logo-green.png" alt="Logo"></picture>
+    </a>
+    <nav class="header__menu menu" data-last="header-btn, append">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Услуги и цены</a></li>
+            <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="header__functions functions">
+        <a data-first="header-btn, after" href="tel:+380689167037" class="functions__phone">
+            <span>+38 (068) 916 70 37</span>
+            <svg>
+                <use xlink: href="img/icons/icons.svg#phone"></use>
+            </svg>
+        </a>
+        <a href="#callback" data-move="header-btn, 768" class="functions__btn btn_green popup-link">Обговорити
+            проект</a>
+        <div class="functions__lang select-box">
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" class="radio" id="ua" name="lang">
+                    <label for="for ua">Ua</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="eng" name="lang">
+                    <label for="for eng">Eng</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="de" name="lang">
+                    <label for="for de">De</label>
+                </div>
+            </div>
+            <div class="selected">
+                Ua
+            </div>
+        </div>
+    </div>
+</header>
+
+		<div class="main">
+
+			<section class="main__section section-main">
+				<div class="section-main__bg">
+					<div class="section-main__gradient bg-gradient"></div>
+					<div class="section-main__gradient bg-gradient"></div>
+					<div class="section-main__container container">
+						<div class="section-main__circle"></div>
+						<div class="section-main__circle"></div>
+					</div>
+				</div>
+				<div class="section-main__container container">
+					<div class="section-main__graph">
+						<div class="section-main__anim-logo">
+							<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture>
+							<svg class="rotating-text" width="251" height="250" viewBox="0 0 251 250" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M235.942 134.882C235.437 140.055 235.079 144.343 234.868 147.745C233.983 147.418 233.124 147.184 232.292 147.043C231.459 146.902 230.446 146.769 229.251 146.644L231.221 127.793C234.665 128.297 237.894 128.707 240.907 129.021C243.921 129.336 247.164 129.603 250.639 129.821L249.957 136.346L235.942 134.882Z"
+									fill="white" />
+								<path
+									d="M231.599 155.998C229.408 162.447 227.889 167.146 227.04 170.096C226.386 169.737 225.692 169.412 224.958 169.121C224.236 168.852 223.315 168.525 222.197 168.138L229.02 148.394C232.261 149.665 235.313 150.795 238.176 151.784C241.04 152.774 244.139 153.768 247.473 154.768L240.65 174.512L236.049 172.923L240.8 159.176L238.36 158.333C238.062 159.14 237.638 160.34 237.088 161.933C236.157 164.626 235.245 167.431 234.351 170.346L229.979 168.835C231.076 165.991 232.09 163.222 233.021 160.528C233.571 158.936 233.978 157.73 234.242 156.911L231.599 155.998Z"
+									fill="white" />
+								<path
+									d="M223.63 203.165L206.229 194.072L210.096 188.28L221.92 195.655L211.828 185.687L215.74 179.829L228.759 185.221L217.487 177.212L221.354 171.421L236.427 184.003L231.35 191.605L219.472 186.49L228.916 195.25L223.63 203.165Z"
+									fill="white" />
+								<path
+									d="M205.521 221.182L200.523 225.597L193.437 217.578C191.719 215.58 190.955 213.348 191.146 210.884C191.323 208.432 192.977 205.823 196.107 203.058C199.278 200.257 201.988 198.952 204.237 199.142C206.498 199.345 208.499 200.459 210.241 202.484L217.452 210.644L212.454 215.059L205.528 207.221C205.005 206.63 204.538 206.182 204.125 205.877C203.71 205.598 203.125 205.505 202.37 205.598C201.602 205.702 200.687 206.224 199.625 207.161C198.47 208.182 197.766 209.09 197.513 209.887C197.273 210.698 197.284 211.346 197.546 211.832C197.794 212.33 198.197 212.895 198.755 213.526L205.521 221.182Z"
+									fill="white" />
+								<path
+									d="M172.271 234.439C171.538 233.063 171.259 231.719 171.434 230.407C171.593 229.104 172.373 227.805 173.776 226.511C173.451 226.359 173.211 226.232 173.056 226.132L166.367 222.84L172.823 219.403C174.21 220.329 176.288 221.579 179.055 223.152L182.544 221.294L179.612 215.789L185.213 212.807C186.722 215.943 188.188 218.848 189.612 221.522C191.036 224.195 192.628 227.033 194.39 230.035L188.788 233.017L188.775 232.993L183.91 235.583C180.713 237.285 178.208 237.959 176.394 237.604C174.581 237.25 173.206 236.195 172.271 234.439ZM186.349 228.437L184.908 225.732L181.703 227.438C180.358 228.154 179.367 228.732 178.728 229.174C178.083 229.639 177.676 230.039 177.508 230.372C177.34 230.705 177.353 231.053 177.547 231.417C177.732 231.765 178.002 231.967 178.356 232.022C178.711 232.077 179.257 231.958 179.995 231.667C180.734 231.375 181.783 230.867 183.144 230.143L186.349 228.437Z"
+									fill="white" />
+								<path
+									d="M164.101 226.533C163.737 227.569 163.46 228.518 163.273 229.379C163.068 230.245 162.911 231.229 162.803 232.329C161.388 231.931 159.814 231.74 158.079 231.757C156.344 231.773 154.773 231.96 153.366 232.319C151.924 232.686 150.938 233.067 150.41 233.46C149.885 233.871 149.661 234.224 149.736 234.519C150.006 235.579 151.757 235.697 154.988 234.874C158.532 233.972 161.196 233.681 162.98 234.004C164.769 234.344 165.874 235.338 166.294 236.988C166.892 239.333 166.359 241.309 164.697 242.916C163.034 244.523 160.648 245.723 157.538 246.515C155.731 246.975 153.821 247.212 151.808 247.225C149.782 247.26 147.903 247.073 146.171 246.664C146.382 245.389 146.556 243.856 146.691 242.064C146.707 241.69 146.728 241.408 146.753 241.216C147.82 241.703 149.308 241.953 151.217 241.966C153.131 241.996 154.774 241.837 156.146 241.487C157.796 241.067 158.88 240.671 159.395 240.299C159.915 239.945 160.122 239.559 160.016 239.142C159.91 238.725 159.433 238.486 158.585 238.425C157.724 238.385 156.546 238.556 155.052 238.936C151.369 239.874 148.585 240.13 146.7 239.704C144.82 239.295 143.659 238.222 143.216 236.485C142.597 234.054 143.036 232.074 144.533 230.546C146.035 229.035 148.584 227.822 152.18 226.906C154.109 226.414 156.125 226.123 158.229 226.031C160.338 225.956 162.295 226.124 164.101 226.533Z"
+									fill="white" />
+								<path
+									d="M109.361 229.64C109.614 230.687 109.961 232.003 110.402 233.587L118.949 234.314L120.615 230.597L127.34 231.169L118.183 249.979L108.323 249.14L102.421 229.05L109.361 229.64ZM111.573 237.896C112.093 239.829 112.63 241.763 113.185 243.699L113.68 245.495C114.443 243.923 115.572 241.545 117.066 238.363L111.573 237.896Z"
+									fill="white" />
+								<path
+									d="M88.2658 235.729L77.4126 231.981L81.0482 221.46L85.5217 223.006L84.5011 227.688C85.5656 226.254 86.8849 225.373 88.4589 225.044C90.033 224.716 91.7605 224.876 93.6414 225.526C95.3528 226.117 96.7461 227.025 97.8213 228.25C98.8795 229.468 99.5441 230.921 99.8148 232.607C100.069 234.288 99.8677 236.077 99.212 237.974C98.164 241.007 96.4291 243.091 94.0071 244.226C91.5852 245.362 88.4594 245.268 84.6299 243.945C82.444 243.19 80.6437 242.17 79.229 240.885C77.7973 239.594 76.7545 238.001 76.1005 236.107C76.9976 235.981 78.7581 235.716 81.3818 235.314L82.1402 235.178C82.5727 236.067 83.1739 236.824 83.9438 237.451C84.7079 238.094 85.5813 238.585 86.5641 238.925C88.1908 239.486 89.5517 239.473 90.6466 238.884C91.7358 238.312 92.497 237.399 92.9302 236.146C93.3985 234.791 93.3525 233.552 92.7921 232.429C92.2148 231.3 91.045 230.432 89.2828 229.823C88.5202 229.56 87.7451 229.415 86.9573 229.389C86.1526 229.358 85.4108 229.528 84.7321 229.901L89.6884 231.613L88.2658 235.729Z"
+									fill="white" />
+								<path
+									d="M70.1594 220.918C64.4058 217.271 60.1952 214.688 57.5277 213.169C58.0302 212.618 58.5094 212.02 58.9655 211.376C59.3968 210.737 59.9319 209.92 60.5707 208.924L78.1583 220.202C76.1598 223.051 74.3426 225.751 72.7068 228.301C71.071 230.85 69.3746 233.627 67.6175 236.631L50.0299 225.353L52.6579 221.257L64.9035 229.11L66.2973 226.937C65.5827 226.458 64.5161 225.763 63.0977 224.853C60.6983 223.315 58.187 221.768 55.5635 220.214L58.0608 216.321C60.5681 218.057 63.0214 219.694 65.4207 221.233C66.8392 222.142 67.9154 222.822 68.6494 223.271L70.1594 220.918Z"
+									fill="white" />
+								<path
+									d="M27.9871 204.182C30.2625 202.178 32.6498 199.98 35.1492 197.587C37.6615 195.183 39.9686 192.888 42.0704 190.703L48.7278 197.655L42.6219 212.506L52.8933 202.005L57.6726 206.996C55.0611 209.297 52.661 211.495 50.4725 213.59C48.2968 215.672 46.0025 217.967 43.5893 220.475L36.7459 213.328L43.1246 198.18L32.5432 208.94L27.9871 204.182Z"
+									fill="white" />
+								<path
+									d="M33.0261 175.732C35.0352 179.249 35.7681 182.267 35.2248 184.786C34.6815 187.305 33.0243 189.355 30.2531 190.937C27.4664 192.528 24.7879 192.953 22.2176 192.212C19.6472 191.471 17.3575 189.341 15.3484 185.824C12.5391 180.906 12.348 176.649 14.7751 173.055C16.0578 174.181 17.7196 175.409 19.7606 176.742C19.1465 177.691 18.9094 178.776 19.0491 179.996C19.18 181.201 19.5343 182.309 20.1122 183.321C20.9656 184.815 21.9982 185.701 23.2101 185.98C24.4063 186.267 25.5804 186.081 26.7325 185.424C27.9779 184.713 28.7754 183.741 29.1249 182.51C29.4499 181.272 29.1501 179.843 28.2256 178.225C27.4877 176.933 26.6908 176.026 25.8348 175.503C24.9633 174.989 23.9583 174.82 22.8197 174.995C22.7757 173.328 22.6129 171.254 22.3312 168.773C24.6595 168.475 26.7173 169.024 28.5047 170.418C30.2921 171.813 31.7993 173.584 33.0261 175.732Z"
+									fill="white" />
+								<path
+									d="M0.923512 143.787L1.80764 144.082C5.17353 145.181 8.14163 146.106 10.7119 146.857C13.2603 147.596 15.5784 148.163 17.666 148.56L22.0614 147.405L23.8457 154.191L19.0082 155.463C17.8765 156.446 16.7397 157.551 15.5978 158.777C14.4386 160.008 12.8636 161.738 10.8728 163.966C9.36308 165.697 8.16598 167.031 7.28151 167.968L5.36727 160.687C6.2882 159.889 7.63402 158.628 9.40474 156.902C11.2101 155.168 12.4893 153.97 13.2423 153.308C11.8171 153.034 10.0511 152.627 7.94425 152.088C5.47977 151.457 3.75937 151.047 2.78306 150.859L0.923512 143.787Z"
+									fill="white" />
+								<path
+									d="M14.4909 119.633C14.7959 114.444 14.9884 110.146 15.0686 106.739C15.9656 107.031 16.8328 107.232 17.6701 107.341C18.5073 107.45 19.5253 107.543 20.7238 107.622L19.4813 126.535C16.0202 126.164 12.778 125.879 9.75475 125.681C6.73148 125.482 3.4799 125.341 0 125.256L0.430039 118.71L14.4909 119.633Z"
+									fill="white" />
+								<path
+									d="M18.037 98.2078C19.9829 91.6807 21.3242 86.9275 22.0609 83.9481C22.7278 84.2817 23.4333 84.5803 24.1777 84.8438C24.9101 85.085 25.8423 85.3775 26.9745 85.7214L20.9009 105.709C17.6148 104.561 14.5222 103.547 11.6233 102.666C8.7243 101.786 5.59008 100.909 2.22059 100.035L8.2942 80.0479L12.9514 81.4623L8.72254 95.3789L11.1927 96.1291C11.46 95.3112 11.8385 94.0962 12.3284 92.4842C13.1569 89.7574 13.9627 86.9208 14.7457 83.9741L19.1713 85.3183C18.1825 88.2024 17.2738 91.0078 16.4452 93.7345C15.9554 95.3465 15.594 96.5667 15.361 97.3951L18.037 98.2078Z"
+									fill="white" />
+								<path
+									d="M24.0791 51.0103L41.8029 59.4595L38.1507 65.3885L26.064 58.4523L36.515 68.044L32.8205 74.0417L19.6127 69.1306L31.1707 76.7201L27.5185 82.6491L11.9945 70.6288L16.7889 62.8455L28.8464 67.522L19.0873 59.1141L24.0791 51.0103Z"
+									fill="white" />
+								<path
+									d="M41.5741 32.1484L46.4083 27.5553L53.7815 35.3113C55.571 37.2458 56.4153 39.4478 56.3144 41.9174C56.2265 44.3746 54.6686 47.0417 51.6408 49.9186C48.5739 52.8325 45.9133 54.2354 43.6588 54.1274C41.392 54.0063 39.3515 52.9656 37.5373 51.0051L30.0345 43.1127L34.8687 38.5195L42.0751 46.1002C42.6185 46.6718 43.1021 47.1025 43.5259 47.3922C43.9503 47.6565 44.5381 47.7285 45.2894 47.6082C46.0536 47.4755 46.949 46.9214 47.9756 45.946C49.0932 44.8842 49.7637 43.9504 49.9871 43.1447C50.1981 42.326 50.1639 41.6786 49.8843 41.2024C49.6178 40.7139 49.1943 40.1643 48.6138 39.5537L41.5741 32.1484Z"
+									fill="white" />
+								<path
+									d="M73.8833 17.8709C74.6667 19.2193 74.9953 20.552 74.8689 21.8689C74.7581 23.1769 74.0259 24.5038 72.6723 25.8495C73.0024 25.9894 73.2467 26.1066 73.4052 26.2011L80.2113 29.2442L73.8864 32.9171C72.4659 32.0424 70.344 30.8702 67.5206 29.4007L64.1023 31.3856L67.2359 36.7791L61.7481 39.9658C60.1252 36.8871 58.5529 34.0382 57.0312 31.419C55.5094 28.7998 53.8131 26.0228 51.9422 23.0882L57.43 19.9014L57.4435 19.9247L62.2104 17.1565C65.3419 15.338 67.8204 14.5724 69.6459 14.8596C71.4713 15.1469 72.8838 16.1506 73.8833 17.8709ZM60.0368 24.3882L61.5766 27.0384L64.7158 25.2154C66.0335 24.4502 67.0031 23.8354 67.6247 23.3708C68.2528 22.8817 68.6445 22.4676 68.8 22.1286C68.9555 21.7896 68.9297 21.4419 68.7226 21.0854C68.5245 20.7444 68.2474 20.553 67.8913 20.511C67.5352 20.4691 66.9936 20.6074 66.2665 20.926C65.5394 21.2446 64.5092 21.791 63.176 22.5652L60.0368 24.3882Z"
+									fill="white" />
+								<path
+									d="M82.4317 25.2866C82.7571 24.2373 82.9972 23.2786 83.1518 22.4106C83.3237 21.5375 83.4428 20.5491 83.5091 19.4456C84.9381 19.7896 86.5191 19.9205 88.2521 19.8383C89.985 19.7561 91.5478 19.5093 92.9404 19.0978C94.3674 18.6762 95.3376 18.2587 95.851 17.8453C96.3593 17.4148 96.5703 17.0534 96.4839 16.7612C96.1739 15.7128 94.4201 15.661 91.2222 16.6058C87.715 17.6421 85.0638 18.033 83.2686 17.7785C81.4684 17.5067 80.327 16.5544 79.8443 14.9216C79.1583 12.6012 79.6155 10.6065 81.2158 8.9375C82.8162 7.26851 85.1551 5.97936 88.2326 5.07005C90.0206 4.54173 91.9202 4.23276 93.9314 4.14312C95.9547 4.03122 97.8397 4.14708 99.5863 4.49069C99.4231 5.77243 99.3078 7.31101 99.2404 9.10643C99.2388 9.48068 99.2291 9.7639 99.2111 9.9561C98.126 9.51046 96.6294 9.31722 94.7214 9.37638C92.8083 9.41835 91.1726 9.63999 89.8144 10.0413C88.1811 10.5239 87.1138 10.9607 86.6125 11.3518C86.1061 11.7257 85.9139 12.1189 86.0359 12.5314C86.1578 12.9439 86.6437 13.1648 87.4936 13.194C88.3556 13.201 89.5259 12.986 91.0044 12.5492C94.6493 11.4722 97.4214 11.111 99.3209 11.4656C101.215 11.8029 102.416 12.831 102.925 14.5498C103.636 16.9561 103.272 18.9512 101.834 20.535C100.39 22.1017 97.8888 23.4107 94.33 24.4623C92.4216 25.0262 90.4179 25.3939 88.3188 25.5656C86.2146 25.7201 84.2523 25.6271 82.4317 25.2866Z"
+									fill="white" />
+								<path
+									d="M137.307 20.0208C137.018 18.9834 136.625 17.6806 136.13 16.1124L127.562 15.6823L126.026 19.4546L119.285 19.1162L127.784 0L137.668 0.496098L144.263 20.3699L137.307 20.0208ZM134.809 11.8468C134.223 9.93309 133.619 8.01848 132.997 6.10298L132.44 4.32532C131.732 5.92282 130.686 8.33785 129.303 11.5704L134.809 11.8468Z"
+									fill="white" />
+								<path
+									d="M157.568 12.9102L168.555 16.2471L165.319 26.8968L160.79 25.5214L161.633 20.8042C160.624 22.277 159.339 23.2073 157.778 23.595C156.218 23.9827 154.485 23.8875 152.581 23.3092C150.849 22.783 149.422 21.9282 148.301 20.7449C147.198 19.5669 146.479 18.1403 146.145 16.4654C145.828 14.7956 145.961 13.0004 146.545 11.0797C147.478 8.00996 149.133 5.86208 151.51 4.63601C153.888 3.40995 157.015 3.38563 160.891 4.56304C163.104 5.23511 164.942 6.18656 166.404 7.41738C167.883 8.65342 168.985 10.2057 169.71 12.0743C168.819 12.2343 167.069 12.5647 164.463 13.0655L163.71 13.2303C163.244 12.3583 162.615 11.6239 161.822 11.0272C161.034 10.4133 160.143 9.95526 159.148 9.65309C157.501 9.15295 156.142 9.21775 155.07 9.8475C154.003 10.4601 153.277 11.4009 152.891 12.67C152.474 14.0419 152.567 15.2783 153.169 16.3791C153.789 17.4851 154.991 18.309 156.775 18.8508C157.546 19.0852 158.327 19.2004 159.115 19.1963C159.92 19.1974 160.655 18.9991 161.319 18.6014L156.302 17.0775L157.568 12.9102Z"
+									fill="white" />
+								<path
+									d="M176.513 26.991C182.397 30.4243 186.7 32.8509 189.421 34.2708C188.939 34.8397 188.482 35.4545 188.05 36.1153C187.643 36.7697 187.138 37.6062 186.536 38.6247L168.546 27.9999C170.439 25.0791 172.155 22.3147 173.696 19.7068C175.237 17.0989 176.831 14.2616 178.476 11.1949L196.466 21.8197L193.991 26.0094L181.465 18.6117L180.152 20.8338C180.883 21.2868 181.975 21.9418 183.426 22.7987C185.88 24.2482 188.446 25.7015 191.125 27.1586L188.773 31.14C186.203 29.4976 183.691 27.9517 181.237 26.5023C179.786 25.6454 178.686 25.0058 177.936 24.5837L176.513 26.991Z"
+									fill="white" />
+								<path
+									d="M219.617 42.3241C217.416 44.4094 215.11 46.6927 212.7 49.1739C210.276 51.6681 208.054 54.0452 206.033 56.3054L199.127 49.5993L204.69 34.5368L194.807 45.4033L189.849 40.5892C192.375 38.195 194.694 35.9115 196.805 33.7388C198.903 31.5789 201.113 29.2019 203.433 26.6079L210.532 33.5013L204.708 48.8718L214.891 37.7347L219.617 42.3241Z"
+									fill="white" />
+								<path
+									d="M215.567 70.7482C213.429 67.307 212.586 64.3179 213.036 61.781C213.486 59.2442 215.067 57.1343 217.778 55.4514C220.504 53.7591 223.165 53.236 225.761 53.882C228.357 54.528 230.724 56.5716 232.861 60.0129C235.849 64.8245 236.197 69.0707 233.904 72.7516C232.58 71.6743 230.874 70.5075 228.786 69.2512C229.365 68.2802 229.562 67.1874 229.377 65.9729C229.202 64.7735 228.807 63.679 228.192 62.6893C227.285 61.2275 226.22 60.3799 224.999 60.1464C223.793 59.9034 222.626 60.1318 221.499 60.8314C220.281 61.5877 219.52 62.5877 219.216 63.8312C218.936 65.0804 219.289 66.4969 220.272 68.0805C221.057 69.3443 221.887 70.2216 222.761 70.7124C223.651 71.1938 224.662 71.326 225.793 71.109C225.898 72.7735 226.137 74.8403 226.51 77.3093C224.194 77.692 222.118 77.2194 220.28 75.8917C218.443 74.564 216.872 72.8495 215.567 70.7482Z"
+									fill="white" />
+								<path
+									d="M248.991 101.628L248.096 101.366C244.691 100.396 241.69 99.5838 239.093 98.9302C236.519 98.2885 234.181 97.8091 232.08 97.4919L227.731 98.8126L225.691 92.0987L230.477 90.6452C231.571 89.6199 232.665 88.4728 233.759 87.2037C234.871 85.9295 236.379 84.1414 238.284 81.8395C239.727 80.0525 240.873 78.6743 241.721 77.7049L243.91 84.9075C243.02 85.7398 241.723 87.0516 240.019 88.8429C238.281 90.6447 237.048 91.8901 236.32 92.5794C237.755 92.7993 239.535 93.139 241.661 93.5985C244.147 94.1358 245.882 94.48 246.865 94.6311L248.991 101.628Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="section-main__flag">
+							<picture><source srcset="img/Flag.webp" type="image/webp"><img src="img/Flag.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="section-main__content _animated">
+						<h1 class="section-main__title _type-text">Розробка сайтів будь-якої складності</h1>
+						<div class="section-main__text">Задача организации, в особенности же реализация намеченных
+							плановых заданий влечет за собой процесс внедрения и модернизации
+							дальнейших направлений развития.
+						</div>
+						<div class="section-main__btns">
+							<a href="#" class="section-main__btn btn_green">Обговорити проект</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="section-main__mouse">
+					<svg>
+						<use xlink: href="img/icons/icons.svg#mouse"></use>
+					</svg>
+				</a>
+			</section>
+
+			<div class="main__marquee marquee marquee_blue">
+				<div class="marquee__wrapper _marquee-wrapper">
+					<div class="marquee__text _marquee-text">
+						Lemurs Agency
+					</div>
+					<div class="marquee__text _marquee-text">
+						Lemurs Agency
+					</div>
+					<div class="marquee__text _marquee-text">
+						Lemurs Agency
+					</div>
+				</div>
+			</div>
+
+			<section class="main-service service-main _animated">
+				<div class="service-main__container container">
+					<div class="service-main__title-block title-block" data-scroll data-scroll-speed='1'>
+						<h2 class="service-main__title title _type-text">Услуги</h2>
+						<a href="#" class="service-main__title-link title-link">Посмотреть все</a>
+					</div>
+					<div class="service-main__desc" data-scroll data-scroll-speed='2'>
+						Задача организации, в особенности же реализация намеченных
+						плановых заданий влечет за собой процесс внедрения и модернизации
+					</div>
+					<div class="service-main__table">
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">01</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Landing page</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__label item-service__label_green">Популярно</div>
+										<div class="item-service__title">Landing page</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">02</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Сайт-візитка</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__title">Сайт-візитка</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">03</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Сайт-представництво</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__label item-service__label_pink">Новое</div>
+										<div class="item-service__title">Сайт-представництво</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">04</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Сайт-каталог</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__title">Сайт-каталог</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">05</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Інтернет-магазин</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__title">Інтернет-магазин</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">06</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Підтримка сайтів</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__title">Підтримка сайтів</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">07</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Хостинг сайтів</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__label item-service__label_blue">Другой тег</div>
+										<div class="item-service__title">Хостинг сайтів</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="#" class="service-main__item item-service">
+							<div class="item-service__wrapper">
+
+								<div class="item-service__visible">
+									<div class="item-service__header">
+										<div class="item-service__number">08</div>
+										<div class="item-service__icon">
+											<svg>
+												<use xlink: href="img/icons/icons.svg#arrow"></use>
+											</svg>
+										</div>
+										<div class="item-service__title">Дизайн та поліграфія</div>
+									</div>
+
+									<div class="item-service__title-block">
+										<div class="item-service__title">Дизайн та поліграфія</div>
+									</div>
+								</div>
+
+								<div class="item-service__bg"></div>
+
+								<div class="item-service__content">
+									<div class="item-service__desc">
+										Задача организации, в особенности же реализация намеченных плановых заданий
+										влечет
+										за собой процесс внедрения и модернизации дальнейших
+									</div>
+									<div class="item-service__price">от <span>349$</span></div>
+								</div>
+
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="main__sale banner _animated" data-scroll data-scroll-speed='2'>
+				<div class="banner__container container">
+					<div class="banner__body">
+						<div class="banner__bg">
+							<div class="banner__gradient bg-gradient"></div>
+							<div class="banner__gradient bg-gradient"></div>
+						</div>
+						<div class="banner__content">
+							<div class="banner__image">
+								<svg>
+									<use xlink: href="img/icons/icons.svg#lemur1"></use>
+								</svg>
+							</div>
+							<div class="banner__info">
+								<div class="banner__value">32%</div>
+								<div class="banner__label">на все заказы</div>
+								<div class="banner__text">
+									Заказывай любую услугу в течении 3-х дней и получи скидку до 40%
+								</div>
+								<div class="banner__link-wrapper">
+									<a href="#" class="banner__link">Заказать
+										услугу</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__why why">
+				<div class="why__container container">
+					<div class="why__body">
+						<div class="why__title-block title-block" data-scroll data-scroll-speed='1'>
+							<h2 class="why__title title _type-text">Чому обирають нас
+							</h2>
+						</div>
+						<div class="why__content">
+							<div class="why__bg _animated" data-scroll data-scroll-speed='2'>
+								<div class="why__image">
+									<img src="img/why/image 1.jpg" alt="Bg Image">
+								</div>
+								<div class="why__image">
+									<img src="img/why/image 2.jpg" alt="Bg Image">
+								</div>
+								<div class="why__image">
+									<img src="img/why/image 3.jpg" alt="Bg Image">
+								</div>
+							</div>
+							<ol class="why__list _animated" data-scroll data-scroll-speed='2'>
+								<li class="why__item">
+									<h3 class="why__item-title">Професіоналізм</h3>
+									<div class="why__text">
+										Для нас – це сукупність, знань, практичного досвіду і професійних навиків. Ми
+										прагнемо створювати не просто вражаючі, а максимально корисні та дієві речі.
+									</div>
+								</li>
+								<li class="why__item">
+									<h3 class="why__item-title">Ми бережемо ваш час</h3>
+									<div class="why__text">
+										Ми працюємо повністю в онлайн режимі. Ви не витрачаєте час на дорогу, та
+										перемовини. Все в режимі чату та онлайн конференцій
+									</div>
+								</li>
+								<li class="why__item">
+									<h3 class="why__item-title">Допомагаємо армії та волонтерам</h3>
+									<div class="why__text">
+										Ми любимо нашу країну. Платимо податки тому працюємо за договором. 30% від
+										доходу віддаємо на зсу, волонтерам або можемо з вами купити продуктів та
+										відвезти тим хто цього потребує (діткам, пенсіонерам або переселенцям)
+									</div>
+								</li>
+								<li class="why__item">
+									<h3 class="why__item-title">Швидкість</h3>
+									<div class="why__text">
+										Технології не стоять на місці, тому ми приділяємо увагу сучасним тенденціям і
+										швидко адаптовуємось до змін. Цінуємо час клієнтів, дедлайн нас не лякає
+									</div>
+								</li>
+								<li class="why__item">
+									<h3 class="why__item-title">Працюємо на результат та рекомендації</h3>
+									<div class="why__text">
+										Технології не стоять на місці, тому ми приділяємо увагу сучасним тенденціям і
+										швидко адаптовуємось до змін.
+										Цінуємо час клієнтів, дедлайн нас не лякає
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__portfolio portfolio">
+				<div class="portfolio__container container">
+					<div class="portfolio__body">
+						<div class="portfolio__title-block title-block" data-scroll data-scroll-speed='1'>
+							<h2 class="portfolio__title title">Портфолио</h2>
+							<a href="#" class="portfolio__title-link title-link">
+								Посмотреть все
+							</a>
+						</div>
+						<div class="cards-portfolio__btns" data-scroll data-scroll-speed='2'>
+							<a href="#" class="cards-portfolio__btn btn_pink active" data-filter=".item-first">Все</a>
+							<a href="#" class="cards-portfolio__btn btn_pink" data-filter=".item-second">Веб-сайты</a>
+							<a href="#" class="cards-portfolio__btn btn_pink" data-filter=".item-third">Сайт-візитка</a>
+							<a href="#" class="cards-portfolio__btn btn_pink"
+								data-filter=".item-fourht">Сайт-каталог</a>
+						</div>
+						<div class="portfolio__inner" data-scroll data-scroll-speed='0.1'>
+							<div class="portfolio__cards cards-portfolio mix item-first">
+								<div class="cards-portfolio__items_first">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+											<picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ozon</div>
+											<div class="cards-portfolio__desc">Мобильное приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+											<picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyCar</div>
+											<div class="cards-portfolio__desc">Сайт</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-portfolio__items">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+											<picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Пятерочка</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+											<picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyPet</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+											<picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ostin</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio__cards cards-portfolio mix item-second">
+								<div class="cards-portfolio__items_first">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+											<picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ozon</div>
+											<div class="cards-portfolio__desc">Мобильное приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+											<picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyCar</div>
+											<div class="cards-portfolio__desc">Сайт</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-portfolio__items">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+											<picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Пятерочка</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+											<picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyPet</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+											<picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ostin</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio__cards cards-portfolio mix item-third">
+								<div class="cards-portfolio__items_first">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+											<picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ozon</div>
+											<div class="cards-portfolio__desc">Мобильное приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+											<picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyCar</div>
+											<div class="cards-portfolio__desc">Сайт</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-portfolio__items">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+											<picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Пятерочка</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+											<picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyPet</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+											<picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ostin</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio__cards cards-portfolio mix item-fourht">
+								<div class="cards-portfolio__items_first">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+											<picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ozon</div>
+											<div class="cards-portfolio__desc">Мобильное приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+											<picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyCar</div>
+											<div class="cards-portfolio__desc">Сайт</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-portfolio__items">
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+											<picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Пятерочка</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+											<picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">MyPet</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+									<div class="cards-portfolio__item _animated">
+										<a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+											<picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+										</a>
+										<div class="cards-portfolio__info">
+											<div class="cards-portfolio__name">Ostin</div>
+											<div class="cards-portfolio__desc">Приложение</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+			</section>
+
+			<div class="main__marquee marquee marquee_pink">
+				<div class="marquee__wrapper _marquee-wrapper">
+					<div class="marquee__text _marquee-text">
+						Lemurs Agency
+					</div>
+					<div class="marquee__text _marquee-text">
+						Lemurs Agency
+					</div>
+					<div class="marquee__text _marquee-text">
+						Lemurs Agency
+					</div>
+				</div>
+			</div>
+
+			<section class="main__about about-main">
+				<div class="about-main__comtainer container">
+					<div class="about-main__content">
+						<div class="about-main__block">
+							<div class="about-main__image" data-scroll data-scroll-speed='1'>
+								<div class="about-main__image-path">
+									<svg>
+										<use xlink: href="img/icons/icons.svg#lemur2"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="about-main__info">
+								<div class="about-main__title-block title-block" data-scroll data-scroll-speed='1'>
+									<h2 class="about-main__title title">О нас</h2>
+									<a href="" class="about-main__title-link title-link">Подробнее</a>
+								</div>
+								<div class="about-main__text" data-scroll data-scroll-speed='3'>
+									Первое знакомство происходит с проект-менеджером (клиент-менеджером,
+									аккаунт-менеджером, как угодно). Именно этот человек связующее звено между клиентом
+									и всеми другими отделами компании. Его основная задача – определить потребность и на
+									основе своего опыта предложить наиболее рациональное, с точки зрения затрат и
+									окупаемости решение. Так проходит первый этап. На втором этапе формируется структура
+									будущего сайта с учетом всех пожеланий клиента. Будет это корпоративный
+								</div>
+							</div>
+						</div>
+						<div class="about-main__counters counters" data-scroll data-scroll-speed='5'>
+							<div class="counters__item">
+								<div class="counters__digits counters__digits_blue"><span data-counter>25</span>+</div>
+								<div class="counters__desc">Landing page</div>
+							</div>
+							<div class="counters__item">
+								<div class="counters__digits counters__digits_pink"><span data-counter>10</span>+</div>
+								<div class="counters__desc">Cайт візитка</div>
+							</div>
+							<div class="counters__item">
+								<div class="counters__digits counters__digits_green"><span data-counter>6</span>+</div>
+								<div class="counters__desc">Представництво</div>
+							</div>
+							<div class="counters__item">
+								<div class="counters__digits counters__digits_pink"><span data-counter>8</span>+</div>
+								<div class="counters__desc">Сайт каталог</div>
+							</div>
+							<div class="counters__item">
+								<div class="counters__digits counters__digits_blue"><span data-counter>25</span>+</div>
+								<div class="counters__desc">Лієнтів на підтримка сайтів</div>
+							</div>
+							<div class="counters__item">
+								<div class="counters__digits counters__digits_green"><span data-counter>100</span>k+
+								</div>
+								<div class="counters__desc">Клієнтів дизайн та поліграфія</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__form callback">
+				<div class="callback__bg">
+					<div class="callback__gradient bg-gradient"></div>
+					<div class="callback__gradient bg-gradient"></div>
+				</div>
+				<div class="callback__container container">
+					<form action="#" class="callback__body">
+						<h2 class="callback__title">
+							Остались вопросы или хотите сделать заказ?
+						</h2>
+						<div class="callback__desc">
+							Оставьте заявку на звонок и мы с вами свяжемся. Мы с удовольствием вам поможем!
+						</div>
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Почта" class="_email">
+						<textarea name="comment" placeholder="Вопрос"></textarea>
+						<div class="callback__checkbox checkbox">
+							Поставив отметку, Вы даете согласие на обработку персональных данных и соглашаетесь
+							c политикой конфиденциальности.
+							<input type="checkbox" name="agreement">
+						</div>
+						<button type="submit" class="callback__btn btn_green">Надіслати</button>
+					</form>
+				</div>
+			</section>
+
+		</div>
+
+		<footer class="footer">
+    <div class="footer__block" data-last="footer-menu, after">
+        <a href="#" class="footer__logo" data-first="footer-menu, after">
+            <picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt="Logo"></picture>
+        </a>
+        <nav class="footer__menu menu-footer" data-move="footer-menu, 993">
+            <ul class="menu-footer__list">
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Услуги и цены</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Портфолио</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">О нас</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="footer__functions functions-footer">
+            <a href="mailto:lemurs@info.com" class="functions-footer__email">lemurs@info.com</a>
+            <div class="functions-footer__lang select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="ua" name="lang">
+                        <label for="for ua">Ua</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="eng" name="lang">
+                        <label for="for eng">Eng</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="de" name="lang">
+                        <label for="for de">De</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Ua
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__block">
+        <div class="footer__rights">© 2021 Primax Technology. All rights reserved. Designed by Design Department.</div>
+        <a href="#" class="footer__instagram">
+            <svg>
+                <use xlink: href="img/icons/icons.svg#instagram"></use>
+            </svg>
+        </a>
+    </div>
+</footer>
+		<div class="callback__popup popup" id="callback">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#close"></use>
+                </svg>
+            </a>
+            <form action="#" class="callback__body">
+                <h2 class="callback__title">
+                    Остались вопросы или хотите сделать заказ?
+                </h2>
+                <div class="callback__desc">
+                    Оставьте заявку на звонок и мы с вами свяжемся. Мы с удовольствием вам поможем!
+                </div>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Почта" class="_email">
+                <textarea name="comment" placeholder="Вопрос"></textarea>
+                <div class="callback__checkbox checkbox">
+                    Поставив отметку, Вы даете согласие на обработку персональных данных и соглашаетесь
+                    c политикой конфиденциальности.
+                    <input type="checkbox" name="agreement">
+                </div>
+                <button type="submit" class="callback__btn btn_green">Надіслати</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js?_v=20220704131926"></script>
+	<script src="js/app.min.js?_v=20220704131926"></script>
+</body>
+
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lemurs</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220704131926">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header_white">
+    <div class="header__menu-icon menu-icon__container menu-icon">
+        <button class="menu-icon__btn btn-open">
+            <span class="btn-open__line line "></span>
+            <span class="btn-open__line line"></span>
+            <span class="btn-open__line line"></span>
+        </button>
+        <button class="menu-icon__btn btn-close">
+            <span class="btn-close__line line"></span>
+            <span class="btn-close__line line"></span>
+        </button>
+    </div>
+    <a href="./" class="header__logo">
+        <picture><source srcset="img/logo-green.webp" type="image/webp"><img src="img/logo-green.png" alt="Logo"></picture>
+    </a>
+    <nav class="header__menu menu" data-last="header-btn, append">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Услуги и цены</a></li>
+            <li class="menu__item"><a href="portfolio.html" class="menu__link">Портфолио</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="header__functions functions">
+        <a data-first="header-btn, after" href="tel:+380689167037" class="functions__phone">
+            <span>+38 (068) 916 70 37</span>
+            <svg>
+                <use xlink: href="img/icons/icons.svg#phone"></use>
+            </svg>
+        </a>
+        <a href="#callback" data-move="header-btn, 768" class="functions__btn btn_green popup-link">Обговорити
+            проект</a>
+        <div class="functions__lang select-box">
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" class="radio" id="ua" name="lang">
+                    <label for="for ua">Ua</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="eng" name="lang">
+                    <label for="for eng">Eng</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="de" name="lang">
+                    <label for="for de">De</label>
+                </div>
+            </div>
+            <div class="selected">
+                Ua
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="portfolio-page">
+
+            <section class="portfolio-page__section portfolio">
+                <div class="portfolio__container container">
+                    <div class="portfolio__body">
+                        <div class="portfolio__title-block title-block">
+                            <h1 class="portfolio__title title">Портфолио</h1>
+                        </div>
+                        <div class="portfolio__desc" data-scroll data-scroll-speed='1'>
+                            Задача организации, в особенности же реализация намеченных
+                            плановых заданий влечет за собой процесс внедрения и модернизации
+                        </div>
+                        <div class="cards-portfolio__btns" data-scroll data-scroll-speed='1.5'>
+                            <a href="#" class="cards-portfolio__btn btn_pink active" data-filter=".item-first">Все</a>
+                            <a href="#" class="cards-portfolio__btn btn_pink" data-filter=".item-second">Веб-сайты</a>
+                            <a href="#" class="cards-portfolio__btn btn_pink" data-filter=".item-third">Сайт-візитка</a>
+                            <a href="#" class="cards-portfolio__btn btn_pink" data-filter=".item-fourht">Сайт-каталог</a>
+                        </div>
+                        <div class="portfolio__inner">
+                            <div class="portfolio__cards cards-portfolio mix item-first">
+                                <div class="cards-portfolio__items_first _animated">
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ozon</div>
+                                            <div class="cards-portfolio__desc">Мобильное приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+                                            <picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyCar</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cards-portfolio__items">
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+                                            <picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Пятерочка</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+                                            <picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyPet</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+                                            <picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ostin</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_gray">
+                                            <picture><source srcset="img/portfolio/Card6.webp" type="image/webp"><img src="img/portfolio/Card6.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_green">
+                                            <picture><source srcset="img/portfolio/Card7.webp" type="image/webp"><img src="img/portfolio/Card7.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_purple">
+                                            <picture><source srcset="img/portfolio/Card8.webp" type="image/webp"><img src="img/portfolio/Card8.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ренессанс Кредит</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_yellow">
+                                            <picture><source srcset="img/portfolio/Card9.webp" type="image/webp"><img src="img/portfolio/Card9.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/Card10.webp" type="image/webp"><img src="img/portfolio/Card10.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_grayblue">
+                                            <picture><source srcset="img/portfolio/Card11.webp" type="image/webp"><img src="img/portfolio/Card11.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">36.6</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__cards cards-portfolio mix item-second">
+                                <div class="cards-portfolio__items_first _animated">
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ozon</div>
+                                            <div class="cards-portfolio__desc">Мобильное приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+                                            <picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyCar</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cards-portfolio__items">
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+                                            <picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Пятерочка</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+                                            <picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyPet</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+                                            <picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ostin</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_gray">
+                                            <picture><source srcset="img/portfolio/Card6.webp" type="image/webp"><img src="img/portfolio/Card6.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_green">
+                                            <picture><source srcset="img/portfolio/Card7.webp" type="image/webp"><img src="img/portfolio/Card7.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_purple">
+                                            <picture><source srcset="img/portfolio/Card8.webp" type="image/webp"><img src="img/portfolio/Card8.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ренессанс Кредит</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_yellow">
+                                            <picture><source srcset="img/portfolio/Card9.webp" type="image/webp"><img src="img/portfolio/Card9.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/Card10.webp" type="image/webp"><img src="img/portfolio/Card10.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_grayblue">
+                                            <picture><source srcset="img/portfolio/Card11.webp" type="image/webp"><img src="img/portfolio/Card11.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">36.6</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__cards cards-portfolio mix item-third">
+                                <div class="cards-portfolio__items_first _animated">
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ozon</div>
+                                            <div class="cards-portfolio__desc">Мобильное приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+                                            <picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyCar</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cards-portfolio__items">
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+                                            <picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Пятерочка</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+                                            <picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyPet</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+                                            <picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ostin</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_gray">
+                                            <picture><source srcset="img/portfolio/Card6.webp" type="image/webp"><img src="img/portfolio/Card6.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_green">
+                                            <picture><source srcset="img/portfolio/Card7.webp" type="image/webp"><img src="img/portfolio/Card7.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_purple">
+                                            <picture><source srcset="img/portfolio/Card8.webp" type="image/webp"><img src="img/portfolio/Card8.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ренессанс Кредит</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_yellow">
+                                            <picture><source srcset="img/portfolio/Card9.webp" type="image/webp"><img src="img/portfolio/Card9.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/Card10.webp" type="image/webp"><img src="img/portfolio/Card10.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_grayblue">
+                                            <picture><source srcset="img/portfolio/Card11.webp" type="image/webp"><img src="img/portfolio/Card11.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">36.6</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__cards cards-portfolio mix item-fourht">
+                                <div class="cards-portfolio__items_first _animated">
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/card1.webp" type="image/webp"><img src="img/portfolio/card1.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ozon</div>
+                                            <div class="cards-portfolio__desc">Мобильное приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightblue">
+                                            <picture><source srcset="img/portfolio/Card2.webp" type="image/webp"><img src="img/portfolio/Card2.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyCar</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cards-portfolio__items">
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_red">
+                                            <picture><source srcset="img/portfolio/Card3.webp" type="image/webp"><img src="img/portfolio/Card3.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Пятерочка</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_lightpink">
+                                            <picture><source srcset="img/portfolio/Card4.webp" type="image/webp"><img src="img/portfolio/Card4.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">MyPet</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_pink">
+                                            <picture><source srcset="img/portfolio/Card5.webp" type="image/webp"><img src="img/portfolio/Card5.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ostin</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_gray">
+                                            <picture><source srcset="img/portfolio/Card6.webp" type="image/webp"><img src="img/portfolio/Card6.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_green">
+                                            <picture><source srcset="img/portfolio/Card7.webp" type="image/webp"><img src="img/portfolio/Card7.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_purple">
+                                            <picture><source srcset="img/portfolio/Card8.webp" type="image/webp"><img src="img/portfolio/Card8.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Ренессанс Кредит</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_yellow">
+                                            <picture><source srcset="img/portfolio/Card9.webp" type="image/webp"><img src="img/portfolio/Card9.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">FlyFlowers</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_blue">
+                                            <picture><source srcset="img/portfolio/Card10.webp" type="image/webp"><img src="img/portfolio/Card10.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">Перекресток</div>
+                                            <div class="cards-portfolio__desc">Приложение</div>
+                                        </div>
+                                    </div>
+                                    <div class="cards-portfolio__item _animated">
+                                        <a href="#" class="cards-portfolio__image cards-portfolio__image_grayblue">
+                                            <picture><source srcset="img/portfolio/Card11.webp" type="image/webp"><img src="img/portfolio/Card11.png" alt="Card Image"></picture>
+                                        </a>
+                                        <div class="cards-portfolio__info">
+                                            <div class="cards-portfolio__name">36.6</div>
+                                            <div class="cards-portfolio__desc">Сайт</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio-page__form callback">
+                <div class="callback__bg">
+                    <div class="callback__gradient bg-gradient"></div>
+                    <div class="callback__gradient bg-gradient"></div>
+                </div>
+                <div class="callback__container container">
+                    <form action="#" class="callback__body">
+                        <h2 class="callback__title">
+                            Остались вопросы или хотите сделать заказ?
+                        </h2>
+                        <div class="callback__desc">
+                            Оставьте заявку на звонок и мы с вами свяжемся. Мы с удовольствием вам поможем!
+                        </div>
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Почта" class="_email">
+                        <textarea name="comment" placeholder="Вопрос"></textarea>
+                        <div class="callback__checkbox checkbox">
+                            Поставив отметку, Вы даете согласие на обработку персональных данных и соглашаетесь
+                            c политикой конфиденциальности.
+                            <input type="checkbox" name="agreement">
+                        </div>
+                        <button type="submit" class="callback__btn btn_green">Надіслати</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+    <div class="footer__block" data-last="footer-menu, after">
+        <a href="#" class="footer__logo" data-first="footer-menu, after">
+            <picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt="Logo"></picture>
+        </a>
+        <nav class="footer__menu menu-footer" data-move="footer-menu, 993">
+            <ul class="menu-footer__list">
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Услуги и цены</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Портфолио</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">О нас</a></li>
+                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="footer__functions functions-footer">
+            <a href="mailto:lemurs@info.com" class="functions-footer__email">lemurs@info.com</a>
+            <div class="functions-footer__lang select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="ua" name="lang">
+                        <label for="for ua">Ua</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="eng" name="lang">
+                        <label for="for eng">Eng</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="de" name="lang">
+                        <label for="for de">De</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Ua
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__block">
+        <div class="footer__rights">© 2021 Primax Technology. All rights reserved. Designed by Design Department.</div>
+        <a href="#" class="footer__instagram">
+            <svg>
+                <use xlink: href="img/icons/icons.svg#instagram"></use>
+            </svg>
+        </a>
+    </div>
+</footer>
+        <div class="callback__popup popup" id="callback">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#close"></use>
+                </svg>
+            </a>
+            <form action="#" class="callback__body">
+                <h2 class="callback__title">
+                    Остались вопросы или хотите сделать заказ?
+                </h2>
+                <div class="callback__desc">
+                    Оставьте заявку на звонок и мы с вами свяжемся. Мы с удовольствием вам поможем!
+                </div>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Почта" class="_email">
+                <textarea name="comment" placeholder="Вопрос"></textarea>
+                <div class="callback__checkbox checkbox">
+                    Поставив отметку, Вы даете согласие на обработку персональных данных и соглашаетесь
+                    c политикой конфиденциальности.
+                    <input type="checkbox" name="agreement">
+                </div>
+                <button type="submit" class="callback__btn btn_green">Надіслати</button>
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js?_v=20220704131926"></script>
+    <script src="js/app.min.js?_v=20220704131926"></script>
+</body>
+
+</html>
